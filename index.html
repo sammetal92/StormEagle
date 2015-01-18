@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Storm Eagle</title>
+	<script src="phaser.min.js"></script>
+	<script src="gameCode.js"></script>
+</head>
+<body>
+<center><div id="gameArea"></div>
+<br /><br /><button id="mutebutton" onclick="muteunmute()">Mute</button></center>
+<script type="text/javascript">
+	function muteunmute()
+	{
+		text = document.getElementById("mutebutton").innerHTML;
+		if (text == "Mute")
+			text = "Unmute";
+		else 
+			text = "Mute";
+		muteButtonClicked = true;
+		document.getElementById("mutebutton").innerHTML = text;
+	}
+</script>
+</body>
+</html>
